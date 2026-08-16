@@ -1,0 +1,29 @@
+# Secrets / credentials
+.env
+*.env
+!.env.example
+config/local.yaml
+*.pem
+*.key
+
+# Research artifacts that may contain real evidence pulled from a live run
+/data/
+/reports/runs/
+*.sqlite3
+*.sqlite3-wal
+*.sqlite3-shm
+*.db
+
+# CSV exports (Google Trends downloads, scratch data) — never commit real
+# research inputs into this package's own repo
+*.csv
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+
+# OS / editor
+.DS_Store
+*.swp
